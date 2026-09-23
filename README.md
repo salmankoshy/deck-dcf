@@ -83,7 +83,7 @@ source/ is gitignored. The generated files under model/, mc/, onepager/ and the 
 
 ## Reproduce
 
-Excel must be installed. Steps 2 and 4 open the workbook through pywin32 COM to recalculate and save cached values, so the chain runs on Windows with Microsoft Excel and does not run under LibreOffice.
+The saved workbook, PDF and charts are tracked, so nothing needs rebuilding to read the model. Excel must be installed. Steps 2 and 4 open the workbook through pywin32 COM to recalculate and save cached values, so the chain runs on Windows with Microsoft Excel and does not run under LibreOffice.
 
 1. `py -3.13 -m pip install -r requirements.txt`
 2. `py -3.13 model/build_dcf.py` builds the workbook from the csvs, then recalculates and saves it through Excel (the MC tab reports mc_summary.csv missing on this first pass).
