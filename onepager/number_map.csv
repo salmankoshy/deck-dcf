@@ -1,0 +1,78 @@
+label,shown_on_page,raw_value,source
+"current share price, Sep 21 2026",$80.23,80.23,Assumptions!B8 (defined name price)
+"DCF value per share, perpetuity method",$131,130.74592045178082,DCF!B35 (defined name price_perp)
+"upside, perpetuity DCF vs price",+63%,0.6296387941141819,DCF!B37 (defined name upside_perp)
+"DCF value per share, exit multiple method",$117,117.15192718108187,DCF!C35 (defined name price_exit)
+DECK EV / LTM EBITDA at current price,7.1x,7.08213205499861,Comps!B28 (defined name deck_ev_ebitda)
+peer median EV / LTM EBITDA,11.4x,11.385,Comps!B13 (defined name comps_med)
+FY26 EBIT margin (Historical tab),23.1%,0.23078119312259424,Historical!F28 (row label 'EBIT margin (income from operations / revenue)')
+"cash and cash equivalents, Jun 30 2026 ($M)","$1,570M",1570421.0,Assumptions!B11 (defined name cash)
+comps implied price at peer median multiple,$122,121.99582489903992,Comps!C26 (defined name px_comps_med)
+Monte Carlo P10,$112,111.565099057952,MC!B10 (row label 'P10')
+Monte Carlo P50,$126,126.4032625318999,MC!B12 (row label 'P50')
+Monte Carlo P90,$144,144.2990100998124,MC!B14 (row label 'P90')
+"Monte Carlo worst run of 10,000",$90,90.40731343245339,MC!B16 (row label 'min')
+WACC (live formula),9.2%,0.0923,WACC!B22 (defined name wacc_calc)
+risk-free rate,5%,0.05,Assumptions!B24 (defined name rf)
+"beta, Damodaran shoe",1.00,1.0,Assumptions!B25 (defined name beta)
+equity risk premium,4.2%,0.0423,Assumptions!B27 (defined name erp)
+terminal growth,2.5%,0.025,Assumptions!B32 (defined name tg)
+exit multiple EV/EBITDA,9.5x,9.5,Assumptions!B33 (defined name exit_mult)
+diluted shares (count),136.7M,136710227.0,Assumptions!B10 (defined name shares)
+forecast revenue growth FY27,7.5%,0.075,Assumptions!B14 (defined name g_fy27)
+forecast revenue growth FY31,4%,0.04,Assumptions!B18 (defined name g_fy31)
+forecast EBIT margin,21.5%,0.215,Assumptions!B19 (defined name ebit_margin)
+Monte Carlo runs,"10,000",10000.0,Assumptions!B34 (defined name mc_runs)
+Monte Carlo floor on WACC minus g,1.5%,0.015,Assumptions!B40 (defined name mc_guardrail_wacc_minus_g_min)
+market-implied EBIT margin at current price (DCF tab),12.6%,0.12630494270373696,DCF!B43 (defined name implied_margin)
+forecast revenue growth FY28,7%,0.07,Assumptions!B15 (defined name g_fy28)
+forecast revenue growth FY29,6%,0.06,Assumptions!B16 (defined name g_fy29)
+forecast revenue growth FY30,5%,0.05,Assumptions!B17 (defined name g_fy30)
+"DECK EV/EBITDA per stockanalysis.com, Sep 21 2026",7.4x,7.39,Comps!B31 (defined name deck_ev_ebitda_stockanalysis)
+"DECK EV/EBITDA per GuruFocus, Sep 1 2026",7.6x,7.62,Comps!B32 (defined name deck_ev_ebitda_gurufocus)
+"DECK 10-year median EV/EBITDA per GuruFocus, Sep 1 2026",13.5x,13.49,Comps!B33 (defined name deck_ev_ebitda_10y_median_gurufocus)
+FY26 ROIC on equity less cash plus lease liabilities (Historical tab),100.5%,1.005014877276678,Historical!F35 (defined name roic_fy26)
+RONIC sensitivity input (Assumptions),25%,0.25,Assumptions!B47 (defined name ronic)
+perpetuity value per share at the RONIC input (DCF tab),$124,123.87516420131617,DCF!B47 (defined name px_at_ronic)
+implied return on new capital (DCF tab),104%,1.0447330097087426,DCF!B46 (defined name ronic_implied)
+cash on the Jun 30 2026 balance sheet ($M),"$1,603M",1602589.0,Assumptions!D11 source text; 10-Q Q1 FY27 balance sheet
+cash used for repurchases Jul 1 to Jul 9 2026 ($M),$32M,32168.0,Assumptions!D11 source text; 10-Q Q1 FY27 subsequent events
+"FY27 net sales guide, low",$5.86B,5860000000.0,8-K May 21 2026 (filings/8K_releases_May_Jul_2026.md)
+"FY27 net sales guide, high",$5.91B,5910000000.0,8-K May 21 2026 (filings/8K_releases_May_Jul_2026.md)
+FY28 to FY30 framework: sales growth,high-single-digit,,8-K May 21 2026 (filings/8K_releases_May_Jul_2026.md)
+FY28 to FY30 framework: operating margin,low 20s,,8-K May 21 2026 (filings/8K_releases_May_Jul_2026.md)
+HOKA Q1 FY27 net sales growth,+7.7%,0.077,10-Q Q1 FY27
+HOKA Q1 FY27 DTC growth,+17%,0.173,"10-Q Q1 FY27, HOKA brand net sales by channel: Direct-to-Consumer +17.3% (filings/10Q_Q1FY27.md line 1348)"
+FY26 free cash flow,topped $1B,1000000000.0,"8-K May 21 2026, CFO statement: over one billion dollars of free cash flow (filings/8K_releases_May_Jul_2026.md line 120)"
+FY26 shares repurchased,10.5M,10500000.0,8-K May 21 2026 (filings/8K_releases_May_Jul_2026.md line 114)
+FY26 repurchase spend,$1.075B,1075000000.0,8-K May 21 2026 (filings/8K_releases_May_Jul_2026.md line 114)
+debt,0,0,10-K FY2026; Assumptions!debt
+HOKA net sales growth FY25,+23.6%,0.236,"10-K FY2026 segment note, Reportable Operating Segments (filings/10K_FY2026_Item7_FS.md: HOKA net sales 2,233,090 FY25 vs 1,806,740 FY24)"
+HOKA net sales growth FY26,+15.9%,0.159,"10-K FY2026 segment note, Reportable Operating Segments (filings/10K_FY2026_Item7_FS.md: HOKA net sales 2,587,330 FY26 vs 2,233,090 FY25)"
+go-forward tariff rate,12.5%,0.125,"Q1 FY27 earnings call, Jul 23 2026, per SGI Europe coverage"
+prior tariff rate,10%,0.1,"Q1 FY27 earnings call, Jul 23 2026, per SGI Europe coverage"
+"buyback sizing, share of FY27 FCF",80%,0.8,8-K Jul 23 2026 (filings/8K_releases_May_Jul_2026.md)
+Q2 FY27 catalyst date context,Q2 FY27,,company reporting calendar
+cash date,Jun 30 2026,,10-Q Q1 FY27 balance sheet
+snapshot Net sales FY2024A,"4,288",4287763.0,Historical!D4
+snapshot Net sales FY2025A,"4,986",4985612.0,Historical!E4
+snapshot Net sales FY2026A,"5,472",5472296.0,Historical!F4
+snapshot Net sales FY2027E,"5,883",5882718.2,DCF!C4
+snapshot Net sales FY2031E,"7,286",7286019.448824481,DCF!G4
+snapshot Growth % FY2024A,18.2%,0.18208572469885187,Historical!D26
+snapshot Growth % FY2025A,16.3%,0.16275363167227286,Historical!E26
+snapshot Growth % FY2026A,9.8%,0.09761770470706499,Historical!F26
+snapshot Growth % FY2027E,7.5%,0.075,DCF!C3
+snapshot Growth % FY2031E,4.0%,0.04,DCF!G3
+snapshot EBIT margin % FY2024A,21.6%,0.21631652682296107,Historical!D28
+snapshot EBIT margin % FY2025A,23.6%,0.23649894937672647,Historical!E28
+snapshot EBIT margin % FY2026A,23.1%,0.23078119312259424,Historical!F28
+snapshot EBIT margin % FY2027E,21.5%,0.215,DCF!C5
+snapshot EBIT margin % FY2031E,21.5%,0.215,DCF!G5
+snapshot EBITDA FY2024A,985,985101.0,Historical!D8 + Historical!D13 (income from operations + D&A and accretion)
+snapshot EBITDA FY2025A,"1,248",1248445.0,Historical!E8 + Historical!E13 (income from operations + D&A and accretion)
+snapshot EBITDA FY2026A,"1,339",1338676.0,Historical!F8 + Historical!F13 (income from operations + D&A and accretion)
+snapshot EBITDA FY2027E,"1,347",1347142.4678,DCF!C14
+snapshot EBITDA FY2031E,"1,668",1668498.4537808062,DCF!G14
+snapshot FCFF FY2027E,936,936498.97841,DCF!C13
+snapshot FCFF FY2031E,"1,177",1177336.6734748576,DCF!G13

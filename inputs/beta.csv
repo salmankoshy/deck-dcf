@@ -1,0 +1,3 @@
+window,interval,start,end,n_obs,raw_beta,blume_adj_beta,r_squared,alpha_per_period,beta_std_err,source
+5Y monthly,1mo,2021-11-01,2026-09-01,59,1.0988,1.0662,0.187,-0.002472,0.3034,"yfinance auto_adjust=True, DECK vs SPY, simple returns, OLS"
+2Y weekly,1wk,2024-09-30,2026-09-14,103,1.3346,1.2242,0.1948,-0.009183,0.27,"yfinance auto_adjust=True, DECK vs SPY, simple returns, OLS"

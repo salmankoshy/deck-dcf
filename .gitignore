@@ -1,0 +1,9 @@
+project_files/
+CLAUDE.md
+INTERVIEW_QA.md
+RESUME_BULLET.md
+source/
+__pycache__/
+*.pyc
+~$*
+.DS_Store

@@ -1,0 +1,30 @@
+metric,value,note
+runs,10000,
+seed,42,
+mean,127.33472599528818,value per share ($)
+std,12.896177908834286,value per share ($)
+P5,107.89590957991625,value per share ($)
+P10,111.56509905795203,value per share ($)
+P25,118.1704558734233,value per share ($)
+P50,126.40326253189986,value per share ($)
+P75,135.5098013611079,value per share ($)
+P90,144.29901009981236,value per share ($)
+P95,150.29753438202164,value per share ($)
+min,90.40731343245339,value per share ($)
+max,193.35152519689868,value per share ($)
+worst_corner_value,82.5304629048337,"value per share ($) at the corner of the ranges: growth low, margin low, g low, WACC mean + 2 sd"
+prob_value_gt_price,1.0,
+current_price,80.23,
+guardrail_runs_violating_initially,0,
+guardrail_total_redraws,0,
+guardrail_redraw_passes,0,
+corner_wacc_at_price,0.1053246753840051,"WACC at which the corner (growth low, margin low, g low) reprices to Assumptions price (brentq)"
+corner_wacc_sigma,2.604935076801018,(corner_wacc_at_price - mc_wacc_normal mean) / sd
+spearman_WACC,-0.625541,"Spearman rho, driver draw vs value"
+spearman_EBIT margin,0.54072,"Spearman rho, driver draw vs value"
+spearman_Revenue growth shift,0.400745,"Spearman rho, driver draw vs value"
+spearman_Terminal growth g,0.311406,"Spearman rho, driver draw vs value"
+deterministic_python,130.74592045178082,all drivers at mode
+deterministic_excel_price_perp,130.74592045178082,model/deck_dcf.xlsx via Excel COM
+deterministic_diff,0.0,"python minus excel, must be < 1"
+wacc_capm_reference,0.0923,rf + beta x erp (debt weight 0)
